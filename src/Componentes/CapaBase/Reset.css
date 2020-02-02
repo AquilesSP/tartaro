@@ -12,7 +12,11 @@
 *:focus {
   outline: 0 !important;
 }
- 
+
+body{
+  background-color: deepskyblue !important;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -68,4 +72,46 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.fullAlto{height: 100%;}
+.fullAltoVH{height: 100vh;}
+
+.fullAncho{width: 100%;}
+.fullAnchoVW{width: 100vw;}
+
+/* Hide scrollbar */
+.sidebar:hover{
+	overflow-y: scroll;
+}
+
+.lienzoEscritorio:hover{
+	overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.lienzoEscritorio::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.sidebar,.lienzoEscritorio {
+  -ms-overflow-style: none;
+}
+
+
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-lienzoEscritorio{
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
