@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Row, Col, Button, Modal  } from 'antd';
+import { Modal  } from 'antd';
 import LienzoEscritorio from '../Escritorio/LienzoEscritorio';
 import Navbar from '../Layout/Navbar';
 import Sidebar from '../Layout/Sidebar';

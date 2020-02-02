@@ -19,10 +19,13 @@
 .danger{background: #dc3545;}
 .light{background: #f8f9fa;}
 .dark{background: #343a40;}
+
+.deepskyblue{background: deepskyblue;}
+.deeppink{background:deeppink;}
  
 .fondo-claro{background:#f7f7f7;}
 
-.fondo-grisClaro{background:#ebebeb;}
+.fondo-grisClaro{background:whitesmoke;}
 
 .fondo-beige{background:#FFFFDC;}
  
