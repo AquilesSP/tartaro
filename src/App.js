@@ -6,6 +6,7 @@ import './Componentes/CapaBase/Reset.css';
 import './Componentes/CapaBase/Colores.css';
 import './Componentes/CapaBase/stileto.css';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+//import './style/custom-antd.css';
 
 import LayoutSimple from './Componentes/Layout/LayoutSimple';
 
