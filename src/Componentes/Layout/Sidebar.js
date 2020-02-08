@@ -29,17 +29,27 @@ export default class Sidebar extends Component {
 						onSearch={value => console.log(value)}
 						style={{ width: 200 }}
 					/>
-				</div>
+					</div>
 				<div>
-					{this.state.items.length>0?
-						this.state.items.map(()=><div className="card white">Hola</div>)
+					{this.state.items.length>90?
+						this.state.items.map(()=>
+						<div className="card-fire rosado">
+							<img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Smiley face" className="card-fire-img"/>
+							<div>
+								<p className="card-fire-hour">12hs</p>
+								<h3 className="card-fire-name">Daniel</h3>
+								<p className="card-fire-distance">a 706 mt de distancia</p>
+							</div>
+						</div>)
 						:
-						<Alert
-							message="Informational Notes"
-							description="Additional description and information about copywriting."
-							type="info"
-							showIcon
-						/>
+						<div className="card-fire marmol">
+							<img src="https://randomuser.me/api/portraits/women/85.jpg" alt="Smiley face" className="card-fire-img"/>
+							<div>
+								<p className="card-fire-hour"></p>
+								<h3 className="card-fire-name">Aun sin Taps</h3>
+								<p className="card-fire-distance">Nadie envio un tap aun</p>
+							</div>
+						</div>
 					}
 				</div>
 			</div>

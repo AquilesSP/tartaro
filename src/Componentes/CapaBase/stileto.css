@@ -36,15 +36,79 @@
 	padding: 0 16px;
 }
 
-.card{
-	max-width: 368px;
-	min-height: 150px;
+.card-fire{
+	width: 368px;
+	height: 150px;
 
 	margin-bottom: 16px;
 
 	border-radius: 8px;
-	box-shadow: 0 0 20px -10px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 10px 0px rgba(0, 0, 0, .2);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0.95);
+	transition: all .3s;
+	cursor: pointer;
 }
+.card-fire div{
+	width: 55%;
+}
+
+.card-fire-img{
+	width: 120px;
+	height: 120px;
+	border-radius: 100px;
+	border:3px solid whitesmoke;
+
+	z-index: 15;
+}
+.card-fire:hover{
+	transform: scale(1);
+	opacity: 1;
+
+}
+.rosado .card-fire-hour,.rosado .card-fire-name,.rosado .card-fire-distance{
+	color: whitesmoke;
+	margin: 0;padding:0 0 0 16px;
+}
+
+.marmol .card-fire-hour,.marmol .card-fire-name,.marmol .card-fire-distance{
+	color: lightslategray;
+	margin: 0;padding:0 0 0 16px;
+}
+
+
+.card-fire-hour{
+	text-align: right;
+}
+
+.card-fire-btnLeft,.card-fire-btnRight{
+	position: absolute !important;
+	z-index: 10;
+	transition: all .4s;
+
+}
+
+.card-fire-btnLeft{
+	left: 50%;
+}
+.card-fire-btnRight{
+	right: 50%;
+}
+
+.card-fire:hover .card-fire-btnLeft{
+	left: 17%;
+}
+.card-fire:hover .card-fire-btnRight{
+	right: 17%;
+}
+
+.card-fire:hover .card-fire-hour,.card-fire:hover .card-fire-name,.card-fire:hover .card-fire-distance{
+	color: white;
+}
+
 
 /* === LiezoEscritorio CSS =======================*/
 
