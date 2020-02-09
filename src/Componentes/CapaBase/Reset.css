@@ -110,3 +110,23 @@ p {
   height: 79vh;
   margin-bottom: -17px;
 }
+
+/* Stilos de la scrollbar ============ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  border-radius: 32px;
+}
+
+/* Handle on hover */

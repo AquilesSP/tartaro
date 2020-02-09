@@ -25,7 +25,7 @@ export default class LienzoEscritorio extends Component {
   }
   render() {
     return (
-      <div className="lienzoEscritorio fullAltoVH white">
+      <div className={this.props.darkMode?"lienzoEscritorio fullAltoVH negroProfundo":"lienzoEscritorio fullAltoVH white"}>
         <div className="navbar-lienzoEscritorio">
           <ButtonGroup>
             <Dropdown overlay={menu}>

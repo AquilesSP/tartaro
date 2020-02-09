@@ -4,6 +4,11 @@
 	box-shadow: 1px 0 10px rgba(0, 0, 0, .2);
 
 	width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 32px;
 }
 
 .lista-navbar{
@@ -12,19 +17,31 @@
 	align-items: center;
 }
 .lista-navbar-item{
-	color: white;
+	color: lightslategray;
 	font-size: 32px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 	background-color: transparent;
 	padding: 4px 28px;
-	border-radius: 16px;
+	border-radius: 8px;
+	transition: all .3s;
+	cursor: pointer;
 }
-.lista-navbar-item-active{
-	background-image: linear-gradient(to bottom right,white,whitesmoke);
+
+.negroProfundo .lista-navbar-item{color: lightgray;}
+
+.negroProfundo .lista-navbar-item:hover{color: white;}
+
+.lista-navbar-item-active , .ant-tabs-ink-bar{
+	/* Usa el mismo color q la clase Rosado */
+	background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
 .lista-navbar-item-active svg{
-	color: orange;
+	color: whitesmoke;
+}
+
+.ant-switch-checked{
+	background-color: rgba(211, 211, 211, .2) !important;
 }
 
 /* === Sidebar CSS ================================*/
@@ -72,11 +89,13 @@
 .rosado .card-fire-hour,.rosado .card-fire-name,.rosado .card-fire-distance{
 	color: whitesmoke;
 	margin: 0;padding:0 0 0 16px;
+	transition: all .3s;
 }
 
-.marmol .card-fire-hour,.marmol .card-fire-name,.marmol .card-fire-distance{
+.marmolFrio .card-fire-hour,.marmolFrio .card-fire-name,.marmolFrio .card-fire-distance{
 	color: lightslategray;
 	margin: 0;padding:0 0 0 16px;
+	transition: all .3s;
 }
 
 
@@ -128,7 +147,7 @@
 	height: 200px;
 	margin:16px;
 
-	background-color: whitesmoke;
+	background-color: rgba(245, 245, 245, .6);
 	border-radius: 8px;
 	transition: all .3s;
 	overflow: hidden;
@@ -171,4 +190,25 @@
 	padding: 0 0;
 	flex-direction: row-reverse;
 	margin-bottom: 15px;
+}
+
+.ant-tabs-tab{
+	font-size: 18px;
+	color:lightslategray !important;
+}
+
+.ant-tabs-tab-active{
+	color:black !important;
+}
+
+.ant-tabs-tab:hover{
+	color:black !important;
+}
+
+.negroProfundo .ant-tabs-tab-active{
+	color:white !important;
+}
+
+.negroProfundo .ant-tabs-tab:hover{
+	color:whitesmoke !important;
 }

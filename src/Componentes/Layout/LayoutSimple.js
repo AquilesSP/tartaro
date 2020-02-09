@@ -9,6 +9,7 @@ export default class LayoutSimple extends Component {
     super(props);
     this.state = {
       visible: false,
+      darkMode: false,
       response: [
           {
             "id": {
@@ -85,6 +86,13 @@ export default class LayoutSimple extends Component {
     });
   };
 
+  tougleDarkMode = () => {
+    this.setState({
+      darkMode: !this.state.darkMode,
+    });
+    console.log('Dark Mode: ', this.state.darkMode);
+  };
+
   render() {
     return (
       <div className="flex-row">
@@ -98,9 +106,9 @@ export default class LayoutSimple extends Component {
           <p>Some contents...</p>
           <p>Some contents...</p>
         </Modal>
-        <Navbar showModal={()=>{this.showModal()}}/>
-        <Sidebar/>
-        <LienzoEscritorio/>
+        <Navbar darkMode={this.state.darkMode} showModal={()=>{this.showModal()}} tougleDarkMode={()=>{this.tougleDarkMode()}}/>
+        <Sidebar darkMode={this.state.darkMode}/>
+        <LienzoEscritorio darkMode={this.state.darkMode}/>
       </div>
     )
   }

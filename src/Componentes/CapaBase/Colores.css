@@ -23,16 +23,17 @@
 .deepskyblue{background: deepskyblue;}
 .deeppink{background:deeppink;}
 
-
-
-
 .fondo-claro{background:#f7f7f7;}
 
 .fondo-grisClaro{background:whitesmoke;}
 
 .fondo-beige{background:#FFFFDC;}
 
-.fondo-oscuro{background:#191919;}
+.fondo-oscuro{
+
+    background-image: linear-gradient(to top, #06162b 0%, #3d5c74 100%);
+
+}
 
 .letra-clara{color: #eee;}
 
@@ -45,6 +46,18 @@
 .rosado{background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);}
 
 .marmol{background-image: linear-gradient(to top, #dfe9f3 0%, whitesmoke 100%);}
+
+.marmolDos{background-image: linear-gradient(120deg, #fdfbfb 0%, #dae4e9 100%);}
+
+.marmolFrio{
+
+    background-image: linear-gradient(135deg, #f0f0f080 0%, hsla(217, 35%, 76%, 0.9) 100%);
+
+}
+
+.azulOscuro{background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);}
+
+.negroProfundo{background-image: linear-gradient(to top, #09203f 0%, #537895 100%);}
 
 .claro{background: #eee;}
 .borde-claro{border:3px solid #eee;}
