@@ -10,6 +10,7 @@ export default class LayoutSimple extends Component {
     this.state = {
       visible: false,
       darkMode: false,
+      section:'homePage',
       response: [
           {
             "id": {
@@ -93,6 +94,13 @@ export default class LayoutSimple extends Component {
     console.log('Dark Mode: ', this.state.darkMode);
   };
 
+  changeSection = (value) => {
+    this.setState({
+      section: value,
+    });
+    console.log('Seccion cambio a: ', this.state.section);
+  };
+
   render() {
     return (
       <div className="flex-row">
@@ -106,9 +114,9 @@ export default class LayoutSimple extends Component {
           <p>Some contents...</p>
           <p>Some contents...</p>
         </Modal>
-        <Navbar darkMode={this.state.darkMode} showModal={()=>{this.showModal()}} tougleDarkMode={()=>{this.tougleDarkMode()}}/>
-        <Sidebar darkMode={this.state.darkMode}/>
-        <LienzoEscritorio darkMode={this.state.darkMode}/>
+        <Navbar darkMode={this.state.darkMode} showModal={()=>{this.showModal()}} tougleDarkMode={()=>{this.tougleDarkMode()}} changeSection={(value)=>{this.changeSection(value)}} sectionSelected={this.state.section}/>
+        <Sidebar darkMode={this.state.darkMode} sectionSelected={this.state.section}/>
+        <LienzoEscritorio darkMode={this.state.darkMode} sectionSelected={this.state.section}/>
       </div>
     )
   }
